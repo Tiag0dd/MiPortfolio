@@ -7,9 +7,8 @@ import { Footer } from './layout/footer/footer';
 
 export const routes: Routes = [
   { path: '', component: Home },
-  { path: 'home', component: Home },
   { path: 'projects', component: Projects },
   { path: 'about', component: About },
-  {path: 'navbar', component: Navbar },
-  {path: 'footer', component: Footer},
+  { path: 'navbar', component: Navbar },
+  { path: 'footer', component: Footer },
 ];
