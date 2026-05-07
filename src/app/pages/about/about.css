@@ -1,0 +1,146 @@
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 4rem 0;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2d1b4e;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* el cuadrado que vuela */
+.about-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-badge {
+    background: blueviolet;
+    color: white;
+    padding: 2rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(138, 43, 226, 0.3);
+    transform: rotate(3deg);
+    transition: 0.3s;
+}
+
+.experience-badge:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.experience-badge .number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.experience-badge .label {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.skills-section {
+    margin-bottom: 4rem;
+}
+
+.skills-section h2 {
+    margin-bottom: 2rem;
+    color: blueviolet;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+
+.skill-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #2d1b4e;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background: #f3e8ff;
+    color: blueviolet;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.interests-card {
+    background: linear-gradient(135deg, #f3e8ff 0%, #ffffff 100%);
+    padding: 2.5rem;
+    border-radius: 24px;
+    border: 1px dashed blueviolet;
+}
+
+.interests-list {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+
+.interests-list li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.interests-section {
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .experience-badge {
+        transform: rotate(0);
+        width: 100%;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
