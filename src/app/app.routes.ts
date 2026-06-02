@@ -6,7 +6,8 @@ import { Navbar } from './layout/navbar/navbar';
 import { Footer } from './layout/footer/footer';
 
 export const routes: Routes = [
-  { path: '', component: Home },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: Home },
   { path: 'projects', component: Projects },
   { path: 'about', component: About },
   { path: 'navbar', component: Navbar },
