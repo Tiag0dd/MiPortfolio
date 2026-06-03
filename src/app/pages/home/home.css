@@ -99,7 +99,7 @@
   height: 300px;
   background: blueviolet;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /*blob*/
-  animation: morph 6s linear infinite alternate;
+  animation: morph 4s linear infinite alternate;
 }
 
 @keyframes morph {
