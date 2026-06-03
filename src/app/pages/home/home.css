@@ -35,6 +35,7 @@
   color: blueviolet;
   background: linear-gradient(to right, #7700ff, #a100b3);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
